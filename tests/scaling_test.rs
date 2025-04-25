@@ -7,7 +7,7 @@ use tokio::time::{sleep, Duration};
 
 #[tokio::test]
 async fn test_scaling_stress() {
-    const NUM_AGENTS: usize = 500;
+    const NUM_AGENTS: usize = 2500;
 
     // 🛠 Shared dispatcher for server and metrics
     let dispatcher = Arc::new(Dispatcher::new());

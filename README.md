@@ -4,14 +4,13 @@ This is the SIML Core library and serves the TCP handshaking between the environ
 
 ### Scaling Test Results (500 Agents)
 
-| Metric                 | Value   |
-|-------------------------|---------|
-| Baseline memory         | 4 MB    |
-| Peak memory             | 6 MB    |
-| Memory per agent        | ~4 KB   |
-| Peak CPU usage          | 15.62%  |
-| Idle CPU after connection | 0%   |
-| Connected agents        | 500     |
+| Metric                 | 500 Agents  | 1000 Agents | 2500 Agents
+|-------------------------|---------| ---------| ---------|
+| Baseline memory         | 4 MB    | 5 MB  | 6 MB
+| Peak memory             | 6 MB    | 8 MB | 13 MB
+| Memory per agent        | ~4 KB   | ~4 KB | ~4 KB
+| Peak CPU usage          | 15.62%  |  37.47% | 78.05%
+| Idle CPU after connection | 0%   | 0% | 0%
 
 
 ### Running the Server

@@ -27,7 +27,7 @@ This is the SIML Core library and serves the TCP handshaking between the environ
 
 
 ✅ Summary:
-On an $5500 Apple M3 Ultra with 92GB RAM, the server could theoretically support around 6400 agents concurrently.
+On an $5500 Apple M3 Ultra with 96GB RAM, the server could theoretically support around 6400 agents concurrently.
 Memory usage is negligible; CPU limits scale first under load.
 
 

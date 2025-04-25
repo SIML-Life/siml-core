@@ -12,22 +12,22 @@ This is the SIML Core library and serves the TCP handshaking between the environ
 | Peak CPU usage          | 15.62%  |  37.47% | 78.05%
 | Idle CPU after connection | 0%   | 0% | 0%
 
-### Estimates on a $10k Mac Studio w/ 512GB Ram and M3 Ultra
+### Estimates on a Mac Studio w/ 512GB Ram and M3 Ultra
 
 | Resource | Estimate | Notes |
 |:---------|:---------|:------|
 | Baseline memory | 4–6 MB | Initial server memory footprint |
 | Memory per agent | ~4 KB | Linear growth, lightweight agents |
-| Total available RAM | ~510 GB | (512GB minus system reservations) |
-| Maximum agents (by RAM) | ~130 million agents | Memory is not the limiting factor |
+| Total available RAM | ~88 GB | (96GB minus system reservations) |
+| Maximum agents (by RAM) | ~22 million agents | Memory is not the limiting factor |
 | CPU cores | 32 performance cores | Apple M3 Ultra specs |
-| Maximum agents (by CPU) | ~150,000 agents | CPU becomes bottleneck first |
+| Maximum agents (by CPU) | ~6400 agents | CPU becomes bottleneck first |
 | Peak CPU usage (500 agents) | ~15.62% | From Intel i9 16-core test |
 | Idle CPU usage (after connect) | ~0% | Agents become idle after handshake |
 
 
 ✅ Summary:
-On an Apple M3 Ultra with 512GB RAM, the server could theoretically support around 150,000 agents concurrently.
+On an $5500 Apple M3 Ultra with 92GB RAM, the server could theoretically support around 6400 agents concurrently.
 Memory usage is negligible; CPU limits scale first under load.
 
 

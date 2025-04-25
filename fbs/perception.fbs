@@ -1,0 +1,14 @@
+/// Perception: What the environment sends to the agent each tick.
+/// This must be **agent-agnostic** and include only shared observables.
+
+table Perception {
+  tick: uint;
+  energy: int;
+  position: [int];      // x, y, z
+  bitfield: ubyte;      // raw environmental bit flags
+  nutrient: int;        // raw nutrient content
+  chemosense: [ubyte];  // Optional: 8-channel vector for chemical signals
+  extra: [ubyte];       // Optional generic payload for agent extensions
+}
+
+root_type Perception;

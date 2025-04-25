@@ -1,0 +1,11 @@
+/// Action: What the agent sends back to the environment.
+/// This also must be generic.
+
+table Action {
+  direction: [int];      // delta x, y, z
+  use_energy: bool;
+  emit_signal: ubyte;    // e.g., pheromone, marker, or emotion type
+  extra: [ubyte];        // optional agent-specific payload
+}
+
+root_type Action;

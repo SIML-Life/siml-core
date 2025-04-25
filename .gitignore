@@ -1,0 +1,21 @@
+# Rust build artifacts
+/target/
+
+# IDEs and editors
+**/*.rs.bk
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs (IntelliJ, CLion, etc.)
+.idea/
+
+# By-products
+*.log
+*.tmp
+
+# MacOS
+.DS_Store
+
+# Other common system files
+Thumbs.db

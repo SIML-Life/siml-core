@@ -1,0 +1,7 @@
+table Position {
+  x: int;
+  y: int;
+  z: int;
+}
+
+root_type Position;

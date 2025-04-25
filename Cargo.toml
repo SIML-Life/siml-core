@@ -1,0 +1,22 @@
+[package]
+name = "siml-core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.44.2", features = ["full"] }
+flatbuffers = "25.2.10" # Check for your system version
+futures = "0.3"
+bytes = "1.5"
+async-trait = "0.1" 
+sysinfo = "0.34.2"
+rand = "0.8"
+procfs = "0.15"
+num_cpus = "1.16"
+
+[dev-dependencies]
+tokio = { version = "1.35", features = ["full"] }
+
+[build-dependencies]
+convert_case = "0.4"
+regex = "1"

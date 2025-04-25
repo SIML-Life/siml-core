@@ -1,0 +1,9 @@
+enum Role : byte { Unknown = 0, Agent = 1, Environment = 2 }
+
+table Handshake {
+  agent_id: uint;
+  role: Role;
+  agent_type: string;
+}
+
+root_type Handshake;

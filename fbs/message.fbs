@@ -1,0 +1,19 @@
+include "action.fbs";
+include "perception.fbs";
+include "position.fbs";
+
+enum MessageType : byte {
+  NONE = 0,
+  Position,
+  Perception,
+  Action
+}
+
+table MessageEnvelope {
+  version: ushort = 1;
+  agent_id: uint;
+  message_type: MessageType;
+  payload: [ubyte];
+}
+
+root_type MessageEnvelope;
